@@ -1,0 +1,11 @@
+// {
+//     "params":
+//     {
+//         "local_server": "True",
+//         "local_url" : 'host = "localhost",port = 3306,user = "root",password = "123",database=" techieblog"',
+//         "prod_url" : 'host = "localhost",port = 3306,user = "root",password = "123",database=" techieblog"',
+//         "fb_url" : "facebook.com"
+        
+//     }
+
+// }
