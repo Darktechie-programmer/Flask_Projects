@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Weather App</title>
+    </head>
+
+    <body>
+
+        <center><h1>Welcome to Wether App </h1></center>
+        {% if error %}
+        <center> <p style="color:red">{{ error }}</p></center>
+        {% endif %}
+        <center>        <form method="POST" action="/">
+            <p>
+                <input type='text' placeholder="city name" name='city'>
+                <input type="submit" value="Add City">
+            </p>
+            
+        </form>
+    </center>
+
+    {% if data %}
+        <center>
+                <img src="{{ icon }}" style='float:right'>
+            <table>
+                {% for key,value in data.items() %}
+                <tr>
+                    <td> {{ key }}</td>
+                    <td> {{value }}</td>
+                </tr>
+                {% endfor %}
+            </table>    
+                    
+        </center>
+{% endif %}
+
+    </body>
+</html>
